@@ -7,7 +7,7 @@ import {
 } from "../store/github/github.api";
 
 function Homepage() {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState("dzift");
   const [dropdown, setDropdown] = useState(false);
   const debounced = useDebounce(search);
   const { isLoading, isError, data } = useSearchUsersQuery(debounced, {
